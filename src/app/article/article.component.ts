@@ -1,5 +1,5 @@
 import { Article } from './article.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -10,15 +10,7 @@ import { Component, OnInit } from '@angular/core';
   }
 })
 export class ArticleComponent implements OnInit {
-  public article: Article;
-
-  constructor() {
-    this.article = new Article(
-      'Angular 2',
-      'http://angular.io',
-      10
-    );
-  }
+  @Input() article: Article;
 
   ngOnInit() {
   }
