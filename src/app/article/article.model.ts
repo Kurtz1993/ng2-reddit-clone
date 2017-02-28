@@ -3,5 +3,5 @@ export class Article {
     public link: string;
     public votes: number;
 
-    constructor(title?: string, link?: string, votes?: number) {}
+    constructor(title: string, link: string, votes?: number) {}
 }
