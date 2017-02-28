@@ -24,12 +24,12 @@ export class ArticleComponent implements OnInit {
   }
 
   public voteUp(): boolean {
-    this.article.votes += 1;
+    this.article.voteUp();
     return false;
   }
 
   public voteDown(): boolean {
-    this.article.votes -= 1;
+    this.article.voteDown();
     return false;
   }
 }
